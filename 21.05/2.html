@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function getRandomInt(min, max)
+    {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    var arr=[];
+    for (i=0; i<10; i++){
+        arr.push(getRandomInt(0, 10))
+    }
+    alert(arr);
+    function doubleAll(numbers) {
+        var result = [];
+        for (var i = 0; i < numbers.length; i++) {
+            result.push(numbers[i] * 2)
+        }
+        return result
+    }
+    alert('doubleAll:   '+doubleAll(arr));
+
+    arrReduce=arr.map(function (item) {
+        return item*2;
+    })
+    alert('arrReduce:   '+doubleAll(arr));
+
+</script>
+
+</body>
+</html>
